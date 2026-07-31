@@ -2,10 +2,8 @@ gametitle=Gran Turismo 4 [SCUS-97328] (U)
 
 [Widescreen 16:9]
 gsaspectratio=16:9
-description=Widescreen Text
 author=Aero_
-
-// Corrects Text Aspect Ratio for Widescreen
+description=Corrects the text aspect ratio when 16:9 is selected.
 patch=1,EE,20492A30,extended,08125570 // j 004955C0
 patch=1,EE,204955C0,extended,3C090061 // lui t1,0x0061 : Widescreen Mode 1st-Half of Memory Address
 patch=1,EE,204955C4,extended,352984F0 // ori t1,0x84F0 : Widescreen Mode 2nd-Half of Memory Address
@@ -116,3 +114,8 @@ description=The game will always start in 480p instead of 480i.
 author=Silent
 patch=1,EE,204364A8,extended,AE0516B0
 patch=1,EE,10436598,extended,10E8
+
+[Photo Mode]
+author=PeterDelta
+description=Unlocks FPS in Photo Session.
+patch=1,EE,006186E4,extended,01

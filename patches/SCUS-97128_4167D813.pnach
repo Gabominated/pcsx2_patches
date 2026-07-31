@@ -137,7 +137,7 @@ patch=1,EE,00132fd4,word,44811800
 patch=1,EE,00132fd8,word,46030002
 patch=1,EE,00132fdc,word,46030842
 
-[Widescreen/16:10]
+[Widescreen 16:10]
 gsaspectratio=Stretch
 author=nemesis2000, converted by pgert
 description=Combine with 'Widescreen 16:9'.
@@ -145,7 +145,7 @@ patch=1,EE,001328d4,word,3C013F55
 patch=1,EE,00132e68,word,3C013F55
 patch=1,EE,00132fd0,word,3C013F65
 
-[Widescreen/15:10]
+[Widescreen 15:10]
 gsaspectratio=Stretch
 author=nemesis2000, converted by pgert
 description=Combine with 'Widescreen 16:9'.
@@ -153,7 +153,7 @@ patch=1,EE,001328d4,word,3C013F64
 patch=1,EE,00132e68,word,3C013F64
 patch=1,EE,00132fd0,word,3C013F65
 
-[Widescreen/20:9]
+[Widescreen 20:9]
 gsaspectratio=Stretch
 author=nemesis2000, converted by pgert
 description=Combine with 'Widescreen 16:9'.
@@ -161,7 +161,7 @@ patch=1,EE,001328d4,word,3C013F1A
 patch=1,EE,00132e68,word,3C013F1A
 patch=1,EE,00132fd0,word,3C013F64
 
-[Widescreen/21:9]
+[Widescreen 21:9]
 gsaspectratio=Stretch
 author=nemesis2000, converted by pgert
 description=Combine with 'Widescreen 16:9'.
@@ -175,3 +175,9 @@ description=Might need EE overclocking to be stable (130%).
 patch=1,EE,001D78F0,extended,28420002
 patch=1,EE,E0010001,extended,004DC8A0
 patch=1,EE,001D78F0,extended,28420004
+
+[HUD White Line Fix]
+author=pgert, ported by mrnecromancer247
+description=Removes white pixel lines around the health, arrows and mana HUD elements when using upscaled rendering.
+patch=1,EE,001C2214,word,3C013F7F
+patch=1,EE,001C222C,word,3C013E10
